@@ -35,12 +35,6 @@
         "test": [
           "echo \"Error: no test specified\" && exit 1"
         ],
-        "git-ac": [
-           "git config --global alias.ac '!git add -A && git commit -m'"
-        ],
-        "git-cmp": [
-          "git config --global alias.cmp '!f() { git add -A && git commit -m \"$@\" && git push; }; f'"
-        ],
         "git-user": "git config --global user.name \"cloudikeme\"",
         "git-email": "git config --global user.email \"cloudikeme@gmail.com\""
 
