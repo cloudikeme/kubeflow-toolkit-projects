@@ -32,5 +32,9 @@ Open Vscode , Remote access connect to host, select your newly added IP from  th
 In my remote vm:
 
 i install Docker Engine
-Install Devbox
+Install Devbox : 
+```bash
+curl -fsSL https://get.jetify.com/devbox | bash
+```
+
 Do devbox init , replace devbox.json content with my own config n tools
