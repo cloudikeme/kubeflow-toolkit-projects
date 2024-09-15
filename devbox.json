@@ -25,7 +25,11 @@
       "alias ls='eza --long --color always --all --no-permissions --no-user --no-user --no-time --no-filesize --git'",
       "alias p='cd ~/dev/github'",
       "alias b='cd ..'",
-      "alias k='kubectl'"
+      "alias k='kubectl'",
+      "alias a='git add .'",
+      "alias s='git commit -m \"$@\"'",
+      "alias d='git push -u origin main'",
+      "alias e='git push -u upstream main'"
     ],
       "scripts": {
         "test": [
