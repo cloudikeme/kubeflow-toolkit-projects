@@ -1,0 +1,46 @@
+{
+    "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.12.0/.schema/devbox.schema.json",
+    "packages": [
+    "bat@0.24.0",
+    "eza@0.18.16",
+    "k3d@5.7.3",
+    "argocd@2.12.3",
+    "gum@0.13.0",
+    "yq-go@4.41.1",
+    "jq@1.7.1",
+    "kubectl@1.29.2",
+    "gh@2.56.0",
+    "gh-copilot@1.0.1",
+    "git@2.46.0",
+    "kustomize@5.3.0",
+    "kubernetes-helm@3.14.1",
+    "argo-rollouts@1.6.0",
+    "go@1.23.1",
+    "kubectx@0.9.5",
+    "kube-linter@0.6.8"
+    ],
+    "shell": {
+      "init_hook": [
+      "alias cat='bat --paging never --theme DarkNeon --style plain'",
+      "alias ls='eza --long --color always --all --no-permissions --no-user --no-user --no-time --no-filesize --git'",
+      "alias p='cd ~/dev/github'",
+      "alias b='cd ..'",
+      "alias k='kubectl'"
+    ],
+      "scripts": {
+        "test": [
+          "echo \"Error: no test specified\" && exit 1"
+        ],
+        "git-ac": [
+           "git config --global alias.ac '!git add -A && git commit -m'"
+        ],
+        "git-cmp": [
+          "git config --global alias.cmp '!f() { git add -A && git commit -m \"$@\" && git push; }; f'"
+        ],
+        "git-user": "git config --global user.name \"cloudikeme\"",
+        "git-email": "git config --global user.email \"cloudikeme@gmail.com\""
+
+      }
+    }
+  }
+  
